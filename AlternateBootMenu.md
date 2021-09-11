@@ -8,6 +8,9 @@
  - Puis *Options avancées*
  - Puis *Changer les paramètres du microprogramme UEFI*
  - Le PC redémarre
- - Un menu apparaît qui devrait vous permettre de faire le nécessaire pour booter sur la clé USB
+ - Un menu apparaît qui devrait vous permettre de faire le nécessaire pour booter sur la clé USB, par exemple
+   - s'assurer que le boot depuis la clé USB est autorisé
+   - changer l'ordre des options de boot pour mettre la clé USB en premier (par défaut c'est le disque dur en général)
+   - ...
 
 [Revenir à la page précédente](Installation.md)
