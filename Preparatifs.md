@@ -6,7 +6,7 @@
  - rallumer l'ordinateur
  - choisir le One Time Boot (OTB) afin de choisir de booter sur la clé
 
- En effet, le démarrage par défaut se fait sur le disque dur. Celui-ci contiendra toujours votre système d'exploitation originel et le demarrage par défaut sera donc inchangé. 
+ En effet, le démarrage par défaut se fait sur le disque dur. Celui-ci contiendra toujours votre système d'exploitation originel et le demarrage par défaut, san,s OTB sera donc inchangé. 
  
  La manipulation à réaliser pour activer le OTB dépend de votre ordinateur.
  - pour les ordinateurs Apple : appuyer sur la touche <tt>alt</tt> lorsque le son est émis au démarrage; une liste de disque disponibles apparaît, parmi lesquels la clé USB qu'il faut choisir
@@ -73,3 +73,10 @@ Sous PC/Windows, vous pouvez suivre [ces indications](https://ubuntu.com/tutoria
 - L'écriture est terminée quand la barre de statut est intégralement verte et contient le mot <tt>READY</tt>. Cliquer alors sur <tt>CLOSE</tt> et récupérer la clé USB.
 
 Sous Apple/MacOS, vous pouvez suivre [ces indications](https://ubuntu.com/tutorials/create-a-usb-stick-on-macos#1-overview)
+- Installer le logiciel [Etcher](https://etcher.io/)
+- Insérer la clé USB et lancer Etcher
+- *Select image* : Sélectionner l'image. C'est le fichier ISO (<tt>ubuntu-20.04.3-desktop-amd64.iso</tt> pour Ubuntu, et <tt>xubuntu-20.04.3-desktop-amd64.iso</tt> pour Xubuntu)
+- *Select drive* : Sélectionner le disque. C'est la clé USB.
+- *Flash!* : ne sera activé que lorsque l'image et la clé auront été sélectionnées. Cliquer sur <tt>Flash!</tt> pour lancer l'écriture. 
+- Votre mot de passe administrateur est demandé puis l'écriture se déroule.
+- Lorsque la mention *Flash Complete!* apparaît, le processus est terminé. Vous pouvez quitter le logiciel et récupérer votre clé USB.
