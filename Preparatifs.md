@@ -1,6 +1,6 @@
  # Etapes préparatoires
  
- | [Précédent](Preparatifs.md) | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [Suivant](Installation.md) |
+ | [Précédent](README.md) | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [Suivant](Installation.md) |
  | :---   | :---: |    ---: |
  
  
@@ -91,5 +91,5 @@ Vous pouvez suivre [ces indications](https://ubuntu.com/tutorials/create-a-usb-s
 
 Vous êtes maintenant prêts pour [l'installation](Installation.md).
 
-| [Précédent](Preparatifs.md) | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [Suivant](Installation.md) |
+| [Précédent](README.md) | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [Suivant](Installation.md) |
  | :---   | :---: |    ---: |
