@@ -1,4 +1,8 @@
  # Etapes préparatoires
+ 
+ [Précédent](Preparatifs.md) [Suivant](Installation.md)
+ 
+ 
  ## Principe général
  À l'issue de ce tutoriel, vous aurez une clé USB sur laquelle un système linux sera installé. Afin de booter sur linux, il vous suffira de
  - éteindre votre ordinateur, 
@@ -57,9 +61,11 @@ Dans les deux cas, vous aurez récupéré, a priori dans votre dossier de télé
 
 L'étape suivante consiste à transférer cette image sur la clé USB d'installation. Cela va dépendre du système dont vous disposez.
 
-Sous PC/Linux, vous pouvez suivre [ces indications](https://ubuntu.com/tutorials/create-a-usb-stick-on-ubuntu#1-overview). Mais si vous avez déjà linux installé, pas besoin d'en dire plus...
+### Sous PC/Linux 
+Vous pouvez suivre [ces indications](https://ubuntu.com/tutorials/create-a-usb-stick-on-ubuntu#1-overview). Mais si vous avez déjà linux installé, pas besoin d'en dire plus... À noter que si vous n'avez pas l'utilitaire *Startup disk creator* (installé par défaut sous Ubuntu, mais pas sous Xubuntu par exemple), le paquet à installer est <tt>usb-create-gtk</tt> sous Gnome ou <tt>usb-creator-kde</tt> sous KDE.
 
-Sous PC/Windows, vous pouvez suivre [ces indications](https://ubuntu.com/tutorials/create-a-usb-stick-on-windows#1-overview). En voici un résumé en français:
+### Sous PC/Windows
+Vous pouvez suivre [ces indications](https://ubuntu.com/tutorials/create-a-usb-stick-on-windows#1-overview). En voici un résumé en français:
 - Installer le logiciel [Rufus](https://rufus.ie/)
 - Lancer Rufus et insérer la clé USB (au moins 4Go)
 - Sélectionner la clé USB dans le champ <tt>Device</tt>
@@ -72,7 +78,8 @@ Sous PC/Windows, vous pouvez suivre [ces indications](https://ubuntu.com/tutoria
 - L'écriture se lance, sa progression apparaissant dans le barre *Status*. Cela peut prendre 10 minutes.
 - L'écriture est terminée quand la barre de statut est intégralement verte et contient le mot <tt>READY</tt>. Cliquer alors sur <tt>CLOSE</tt> et récupérer la clé USB.
 
-Sous Apple/MacOS, vous pouvez suivre [ces indications](https://ubuntu.com/tutorials/create-a-usb-stick-on-macos#1-overview)
+### Sous Apple/MacOS
+Vous pouvez suivre [ces indications](https://ubuntu.com/tutorials/create-a-usb-stick-on-macos#1-overview)
 - Installer le logiciel [Etcher](https://etcher.io/)
 - Insérer la clé USB et lancer Etcher
 - *Select image* : Sélectionner l'image. C'est le fichier ISO (<tt>ubuntu-20.04.3-desktop-amd64.iso</tt> pour Ubuntu, et <tt>xubuntu-20.04.3-desktop-amd64.iso</tt> pour Xubuntu)
@@ -80,3 +87,7 @@ Sous Apple/MacOS, vous pouvez suivre [ces indications](https://ubuntu.com/tutori
 - *Flash!* : ne sera activé que lorsque l'image et la clé auront été sélectionnées. Cliquer sur <tt>Flash!</tt> pour lancer l'écriture. 
 - Votre mot de passe administrateur est demandé puis l'écriture se déroule.
 - Lorsque la mention *Flash Complete!* apparaît, le processus est terminé. Vous pouvez quitter le logiciel et récupérer votre clé USB.
+
+Vous êtes maintenant prêts pour [l'installation](Installation.md).
+
+[Précédent](Preparatifs.md) [Suivant](Installation.md)
