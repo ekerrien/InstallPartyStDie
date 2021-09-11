@@ -6,5 +6,7 @@ Les limites de ce tutoriel sont les suivantes :
 - Achitectures matérielles gérées : PC sous Windows, ordinateur Apple sous MacOS
 - distributions proposées : Ubuntu (par défaut), et Xubuntu pour le matériel plus léger/ancien
 
+[Commencer le tutoriel](Preparatifs.md)
+
 Auteurs de ce tutoriel:
 - Erwan Kerrien
