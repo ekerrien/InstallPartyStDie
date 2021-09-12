@@ -46,7 +46,8 @@ Installer linux est simple et rapide, une fois que vous vous êtes [bien prépar
   - Confirmez votre de mot passe : ben oui, faites-le, juste pour être sûr qu'il n'y a pas d'erreur de frappe...
   - Pour des raisons de sécurité, il est fortement recommandé de sélectionner *Demande mon mot de passe pour ouvrir une session*
 - L'installation se lance. Soyez patients...
-- Une fois l'installation terminée, il vous est demandé de redémarrer. Faites-le. À un moment, il vous sera demandé de retirer la clé d'installation. Après l'avoir fait, vous pourrez continuer le redémarrage en appuyant sur la touche <tt>Entrée</tt>
+- Une fois l'installation terminée, il vous est demandé de redémarrer. Cliquez sur <tt>Redémarrez maintenant</tt>
+- À un moment, il vous sera demandé de retirer la clé d'installation. Après l'avoir fait, vous pourrez continuer le redémarrage en appuyant sur la touche <tt>Entrée</tt>
 - Vous n'avez plus besoin de la clé d'installation et vous pouvez la rendre pour que le ou la suivante puisse s'ouvrir aux bienfaits de linux !
 
 
