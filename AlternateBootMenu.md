@@ -14,5 +14,8 @@
    - s'assurer que le boot depuis la clé USB est autorisé
    - changer l'ordre des options de boot pour mettre la clé USB en premier (par défaut c'est le disque dur en général)
    - ...
+ - **Tant que vous y êtes, assurez-vous que**
+   - Le démarrage depuis une clé USB est autorisé
+   - Ce démarrage arrive avant le lancement depuis le disque dur dans l'ordre des options de boot
 
 [Revenir à la page précédente](Installation.md)
