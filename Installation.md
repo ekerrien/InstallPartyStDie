@@ -32,9 +32,22 @@ Installer linux est simple et rapide, une fois que vous vous êtes [bien prépar
 - **Type d'installation** (suite): 
   - Dans la liste des périphériques, choisissez la clé USB. Elle apparaît avec un nom du genre <tt>/dev/sda</tt> (ou <tt>/dev/sdb</tt>... on supposera ici que c'est sda). En cas de doute, vérifier la taille des partitions qu'elle contient (en général une seule, qui doit faire environ 128Go avec les clés fournies par l'IUT).
   - Les partitions sur la clé apparaissent avec un chiffre supplémentaire (par exemple <tt>/dev/sda1</tt>). Cliquez sucessivement sur chaque partition contenue sur la clé et supprimez-la en cliquant sur le signe <tt>-</tt> au-dessous. Faites cela jusque à ce que la seule chose présente sous la clé soit *espace libre*.
-  - Sélectionnez *espace libre* et cliquez sur le signe <tt>+</tt> en-dessous. Cela ouvre une fenêtre. Ne changez rien à part le champ *Point de montage*: indiquez <tt>/</tt> (caractères de barre oblique). Cliquez sur <tt>OK</tt>
-  - Revenez à la liste des périphériques et sélectionnez la partition que vous venez de créer (<tt>/dev/sda1</tt> qui est de type <tt>ext4</tt>)
-  - Dans la liste *Périphérique où sera installé le programme de démarrage* sélectionnez le même périphérique (<tt>/dev/sda</tt> par exemple)
+  - Dans l'espace libre, créez trois partitions:
+    - Sous <tt>/dev/sda</tt>, sélectionnez *espace libre* et cliquez sur le signe <tt>+</tt> en-dessous. Cela ouvre une fenêtre.
+    - **Taille**: 128Mo
+    - **Utiliser comme**: *Partition système EFI*
+    - Cliquez sur <tt>OK</tt>
+    - Sous <tt>/dev/sda</tt>, sélectionnez *espace libre* et cliquez sur le signe <tt>+</tt> en-dessous. Cela ouvre une fenêtre.
+    - **Taille**: 8192 Mo (4096 Mo si 2Go de RAM)
+    - **Utiliser comme**: *espace d'échange (swap)*
+    - Cliquez sur <tt>OK</tt>
+    - Sous <tt>/dev/sda</tt>, sélectionnez *espace libre* et cliquez sur le signe <tt>+</tt> en-dessous. Cela ouvre une fenêtre.
+    - **Taille**: ne changez rien (prend tout ce qui reste)
+    - **Utiliser comme**: gardez *système de fichier journalisé ext4*
+    - **Point de montage**: / (barre oblique)
+    - Cliquez sur <tt>OK</tt>
+  - Revenez à la liste des périphériques et sélectionnez la dernière partition que vous venez de créer (par exemple <tt>/dev/sda3</tt> qui est de type <tt>ext4</tt>)
+  - Dans la liste *Périphérique où sera installé le programme de démarrage* sélectionnez la partition de type efi (<tt>/dev/sda1</tt> par exemple)
   - Cliquez sur <tt>Installer maintenant</tt>
   - Un message d'avertissement apparaît : cliquez sur <tt>Continuer</tt>
 - **Où êtes-vous ?**: vérifiez que la zone est bien Paris, et cliquez sur <tt>Continuer</tt>
