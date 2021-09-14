@@ -30,9 +30,10 @@ Installer linux est simple et rapide, une fois que vous vous êtes [bien prépar
   - Entrez un mot de passe: vous aurez besoin d'un mot de passe plus tard (voir **Qui êtes-vous ?** ci-dessous), vous pouvez prendre le même.
 - **Type d'installation**: Sélectionnez *Autre chose*, puis cliquez sur <tt>Continuer</tt>
 - **Type d'installation** (suite): 
-  - Dans la liste des périphériques, choisissez la clé USB. Elle apparaît avec un nom du genre <tt>/dev/sda</tt> (ou <tt>/dev/sdb</tt>... on supposera ici que c'est sda). En cas de doute, vérifier la taille des partitions qu'elle contient (en général une seule, qui doit faire environ 128Go avec les clés fournies par l'IUT).
-  - Les partitions sur la clé apparaissent avec un chiffre supplémentaire (par exemple <tt>/dev/sda1</tt>). Cliquez sucessivement sur chaque partition contenue sur la clé et supprimez-la en cliquant sur le signe <tt>-</tt> au-dessous. Faites cela jusque à ce que la seule chose présente sous la clé soit *espace libre*.
-  - Dans l'espace libre, créez trois partitions:
+  - Dans la liste des périphériques, choisissez la clé USB. Elle apparaît avec un nom du genre <tt>/dev/sdb</tt> (ou <tt>/dev/sdc</tt>, ou <tt>/dev/sda</tt>... on supposera ici que c'est sdb). En cas de doute, vérifier la taille des partitions qu'elle contient (en général une seule, qui doit faire environ 128Go avec les clés fournies par l'IUT).
+  - Les partitions sur la clé apparaissent avec un chiffre supplémentaire (par exemple <tt>/dev/sdb1</tt>). Cliquez sucessivement sur chaque partition contenue sur la clé et supprimez-la en cliquant sur le signe <tt>-</tt> au-dessous. Faites cela jusque à ce que la seule chose présente sous la clé soit *espace libre*.
+  - Sélectionnez le périphérique correspondant à la clé (ici <tt>/dev/sdb</tt>) et cliquez sur <tt>Nouvelle table de partition</tt>
+  - Puis, dans l'espace libre, créez trois partitions:
     - Sous <tt>/dev/sda</tt>, sélectionnez *espace libre* et cliquez sur le signe <tt>+</tt> en-dessous. Cela ouvre une fenêtre.
     - **Taille**: 128Mo
     - **Utiliser comme**: *Partition système EFI*
