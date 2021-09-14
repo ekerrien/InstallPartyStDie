@@ -91,5 +91,13 @@ Vous pouvez suivre [ces indications](https://ubuntu.com/tutorials/create-a-usb-s
 
 Vous êtes maintenant prêts pour [l'installation](Installation.md).
 
+## Quelques précautions d'usage…
+
+Les manipulations avec les systèmes d'exploitation sont parfois risquées… Surtout si vous avez pris la courageuse décision de remplacer l'OS de votre ordinateur, au lieu d'utiliser la clé USB.
+
+**FAITES. DES. BACKUPS.**
+
+Vous avez plusieurs possibiltés pour stocker les données que vous souhaitez conserver : la clé USB qui vous aura été fournie, un cloud, etc.
+
 | [Précédent](README.md) | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [Suivant](Installation.md) |
  | :---   | :---: |    ---: |
