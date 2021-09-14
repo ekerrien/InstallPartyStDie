@@ -15,7 +15,7 @@
 - (X)Ubuntu devrait se lancer
 - Connectez-vous avec l'identifiant/mot de passe indiqué lors de l'installation et procédez à la [configuration de votre nouveau linux](Configuration.md)
 
-
+En cas de souci, consultez la [page des solutions](Troubleshooting.md)
 
 | [Précédent](Installation.md) | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [Suivant](Configuration.md) |
  | :---   | :---: |    ---: |
