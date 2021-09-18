@@ -158,7 +158,7 @@ fi
 echo "Installation de libgtkext1..."
 dpkg -i "${gtkextpackagepath}"
 if [ $? -eq 0 ]; then
-    echo "Le client est installé correctement"
+    echo "libgtkext1 est installé correctement"
 else
     exitWithErr "Erreur lors de l'installation du paquet !"
 fi
