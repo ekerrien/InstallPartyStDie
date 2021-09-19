@@ -1,9 +1,8 @@
 #!/bin/bash
 
-# SCRIPT D'INSTALLATION POUR LE CLIENT CITRIX WORKSPACE VERSION 19.12.0.19
+# SCRIPT D'INSTALLATION POUR LE CLIENT CITRIX WORKSPACE VERSION 21.8.0.40
 # Ce script installe automatiquement le client nécessaire à l'utilisation du service VirtUL de l'Université de Lorraine, 
 # ainsi que les dépendances et certificats nécessaires au bon fonctionnement du service.
-# La version utilisée est celle fournie sur le wiki de l'université, les versions récentes ne fonctionnant pas avec les serveurs de l'UL
 
 default='\033[0m'
 sucess='\033[1;32m'
@@ -11,7 +10,7 @@ warning='\033[0;33m'
 error='\033[1;31m'
 arch="$(uname -m)"
 citrixpackagepath="/tmp/citrixclient.deb"
-citrixpackagechecksum="d5512ea1fb26e65e03276fbcecc9b9f2"
+citrixpackagechecksum="76ec1fdda1d8e3c82aa3754500fed66e"
 gtkextpackagepath="/tmp/libgtkext1.deb"
 gtkextpackagechecksum="cd55c905954e66cb2a397cd0e102fc8b"
 
@@ -47,20 +46,12 @@ fi
 # TÉLÉCHARGEMENT DU PAQUET
 echo "Téléchargement du paquet..."
 
-# Depuis le serveur de l'UL...
-wget https://clients-virtul.su.univ-lorraine.fr/linux/19.12.0.19/deb/icaclient_19.12.0.19_amd64.deb -O ${citrixpackagepath} --timeout 120 -q --show-progress;
+# Depuis patrickconti.fr
+    wget https://static.patrickconti.fr/icaclient_21.8.0.40_amd64.deb -O ${citrixpackagepath} --timeout 120 -q --show-progress;
 if [ $? -eq 0 ]; then
     echo "Téléchargement réussi"
 else
-    # ...en cas d'erreur, nouvelle tentative depuis un miroir
-    warn "Téléchargement échoué. Essai depuis un miroir..."
-    wget https://static.patrickconti.fr/icaclient_19.12.0.19_amd64.deb -O ${citrixpackagepath} --timeout 120 -q --show-progress;
-
-    if [ $? -eq 0 ]; then
-        echo "Téléchargement réussi"
-    else
-        exitWithErr "ERREUR: Erreur lors du téléchargement !"
-    fi
+    exitWithErr "ERREUR: Erreur lors du téléchargement !"
 fi
 
 # VÉRIFICATION DU CHECKSUM
@@ -94,7 +85,16 @@ fi
 
 # INSTALLATION DU CLIENT
 echo "Installation du client..."
-dpkg -i "${citrixpackagepath}"
+echo "Séléction automatique de la configuration..."
+DEBIAN_FRONTEND=noninteractive
+echo icaclient app_protection/install_app_protection	select	no | debconf-set-selections
+if [ $? -eq 0 ]; then
+    echo "configuration séléctionée avec sucès"
+else
+    warn "Impossible de séléctioner automatiquement une configuration !";
+fi
+
+apt install "${citrixpackagepath}"
 if [ $? -eq 0 ]; then
     echo "Le client est installé correctement"
 else
