@@ -26,7 +26,7 @@ A TERMINER
 ## Ma clé d'installation n'apparait pas dans le boot Menu
 
 - Redémarrez votre ordinateur en appuyant sur la touche vous donnant accès au Bios. Pour connaître la touche en fonction de la marque de votre PC, vous pouvez vous référer à [cette page](https://www.disk-image.com/faq-bootmenu.htm) ou bien [celle-ci](https://techofide.com/blogs/boot-menu-option-keys-for-all-computers-and-laptops-updated-list-2021-techofide/). Dans de nombreux cas, la touche en question est indiquée brièvement dans un message à l'écran.
-- Une fois dans le Bios, assurez vous que l'option "Secure Boot" est désactivée. Si le "Secure Boot" est actif, désactivez le et redémarrez votre appareil.
+- Une fois dans le Bios, assurez vous que l'option <tt>Secure Boot<tt> est désactivée. Si le <tt>Secure Boot<tt> est actif, **désactivez le** et redémarrez votre appareil.
 - Si la clé n'est toujours pas détectée, c'est que l'iso a été mal *flashé* sur celle-ci. Vous devez donc créer **correctement** la clé d'installation [ici](Preparatifs.md).
 
 [Retour à la post-installation](PostIntallation.md)
