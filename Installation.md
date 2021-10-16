@@ -30,25 +30,25 @@ Installer linux est simple et rapide, une fois que vous vous êtes [bien prépar
   - Entrez un mot de passe: vous aurez besoin d'un mot de passe plus tard (voir **Qui êtes-vous ?** ci-dessous), vous pouvez prendre le même.
 - **Type d'installation**: Sélectionnez *Autre chose*, puis cliquez sur <tt>Continuer</tt>
 - **Type d'installation** (suite): 
-  - Dans la liste des périphériques, choisissez la clé USB. Elle apparaît avec un nom du genre <tt>/dev/sdb</tt> (ou <tt>/dev/sdc</tt>, ou <tt>/dev/sda</tt>... on supposera ici que c'est sdb). En cas de doute, vérifier la taille des partitions qu'elle contient (en général une seule, qui doit faire environ 128Go avec les clés fournies par l'IUT).
+  - Dans la liste des périphériques, choisissez la clé USB. Elle apparaît avec un nom du genre <tt>/dev/sdb</tt> (ou <tt>/dev/sdc</tt>, ou <tt>/dev/sda</tt>... on supposera ici que c'est sdb). En cas de doute, vérifier la taille des partitions qu'elle contient (en général une seule, qui doit faire environ 256 Go avec les clés fournies par l'IUT).
   - Les partitions sur la clé apparaissent avec un chiffre supplémentaire (par exemple <tt>/dev/sdb1</tt>). Cliquez sucessivement sur chaque partition contenue sur la clé et supprimez-la en cliquant sur le signe <tt>-</tt> au-dessous. Faites cela jusque à ce que la seule chose présente sous la clé soit *espace libre*.
   - Sélectionnez le périphérique correspondant à la clé (ici <tt>/dev/sdb</tt>) et cliquez sur <tt>Nouvelle table de partition</tt>
   - Puis, dans l'espace libre, créez trois partitions:
-    - Sous <tt>/dev/sda</tt>, sélectionnez *espace libre* et cliquez sur le signe <tt>+</tt> en-dessous. Cela ouvre une fenêtre.
+    - Sous <tt>/dev/sdb</tt>, sélectionnez *espace libre* et cliquez sur le signe <tt>+</tt> en-dessous. Cela ouvre une fenêtre.
     - **Taille**: 128Mo
     - **Utiliser comme**: *Partition système EFI*
     - Cliquez sur <tt>OK</tt>
-    - Sous <tt>/dev/sda</tt>, sélectionnez *espace libre* et cliquez sur le signe <tt>+</tt> en-dessous. Cela ouvre une fenêtre.
+    - Sous <tt>/dev/sdb</tt>, sélectionnez *espace libre* et cliquez sur le signe <tt>+</tt> en-dessous. Cela ouvre une fenêtre.
     - **Taille**: 8192 Mo (4096 Mo si 2Go de RAM)
     - **Utiliser comme**: *espace d'échange (swap)*
     - Cliquez sur <tt>OK</tt>
-    - Sous <tt>/dev/sda</tt>, sélectionnez *espace libre* et cliquez sur le signe <tt>+</tt> en-dessous. Cela ouvre une fenêtre.
-    - **Taille**: ne changez rien (prend tout ce qui reste)
+    - Sous <tt>/dev/sdb</tt>, sélectionnez *espace libre* et cliquez sur le signe <tt>+</tt> en-dessous. Cela ouvre une fenêtre.
+    - **Taille**: ne changez rien (prend tout ce qui reste). Vous pourrez toujours repartitionner cet espace en cas de besoin.
     - **Utiliser comme**: gardez *système de fichier journalisé ext4*
     - **Point de montage**: / (barre oblique)
     - Cliquez sur <tt>OK</tt>
-  - Revenez à la liste des périphériques et sélectionnez la dernière partition que vous venez de créer (par exemple <tt>/dev/sda3</tt> qui est de type <tt>ext4</tt>)
-  - Dans la liste *Périphérique où sera installé le programme de démarrage* sélectionnez la partition de type efi (<tt>/dev/sda1</tt> par exemple)
+  - Revenez à la liste des périphériques et sélectionnez la dernière partition que vous venez de créer (par exemple <tt>/dev/sdb3</tt> qui est de type <tt>ext4</tt>)
+  - Dans la liste *Périphérique où sera installé le programme de démarrage* sélectionnez la partition de type efi (<tt>/dev/sdb1</tt> par exemple)
   - Cliquez sur <tt>Installer maintenant</tt>
   - Un message d'avertissement apparaît : cliquez sur <tt>Continuer</tt>
 - **Où êtes-vous ?**: vérifiez que la zone est bien Paris, et cliquez sur <tt>Continuer</tt>
@@ -58,7 +58,7 @@ Installer linux est simple et rapide, une fois que vous vous êtes [bien prépar
   - Choisir un nom d'utilisateur : par défaut, le premier mot de votre nom, sans majuscule. Vous pouvez le changer.
   - Choisir un mot de passe : à vous de choisir. Prenez-en un suffisamment complexe quand même.
   - Confirmez votre de mot passe : ben oui, faites-le, juste pour être sûr qu'il n'y a pas d'erreur de frappe...
-  - Pour des raisons de sécurité, il est fortement recommandé de sélectionner *Demande mon mot de passe pour ouvrir une session*
+  - Pour des raisons de sécurité, il est fortement recommandé de sélectionner *Demander mon mot de passe pour ouvrir une session*
 - L'installation se lance. Soyez patients...
 - Une fois l'installation terminée, il vous est demandé de redémarrer. Cliquez sur <tt>Redémarrez maintenant</tt>
 - À un moment, il vous sera demandé de retirer la clé d'installation. Après l'avoir fait, vous pourrez continuer le redémarrage en appuyant sur la touche <tt>Entrée</tt>
