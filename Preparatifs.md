@@ -11,19 +11,21 @@
  - rallumer l'ordinateur
  - choisir le One Time Boot (OTB) afin de choisir de booter sur la clé
 
- En effet, le démarrage par défaut se fait sur le disque dur. Celui-ci contiendra toujours votre système d'exploitation originel et le demarrage par défaut, san,s OTB sera donc inchangé. 
+ En effet, le démarrage par défaut se fait sur le disque dur. Celui-ci contiendra toujours votre système d'exploitation originel et le démarrage par défaut, sans OTB sera donc inchangé. 
  
  La manipulation à réaliser pour activer le OTB dépend de votre ordinateur.
- - pour les ordinateurs Apple : appuyer sur la touche <tt>alt</tt> lorsque le son est émis au démarrage; une liste de disque disponibles apparaît, parmi lesquels la clé USB qu'il faut choisir
+ - pour les ordinateurs Apple : appuyer sur la touche <tt>alt</tt> lorsque le son est émis au démarrage; une liste de disques disponibles apparaît, parmi lesquels la clé USB qu'il faut choisir
  - pour les PC, cela dépend de la marque. Le principe est cependant le même : il faut appuyer sur une touche au tout début de démarrage. Vous pouvez vous référer à [cette page web](https://www.disk-image.com/faq-bootmenu.htm) ou encore [celle-ci](https://techofide.com/blogs/boot-menu-option-keys-for-all-computers-and-laptops-updated-list-2021-techofide/) si vous ne savez pas/ne vous souvenez plus de la touche en question.
 
  Pour revenir à votre système d'exploitation initial, il suffit de redémarrer l'ordinateur.
  
- Il est important que vous ayez conscience que faire tourner un système d'exploitation (linux, ici) depuis une clé USB est plus lent que de la faire tourner depuis le disque dur de votre ordinateur, notamment si celui-ci est un disque SSD. L'installation de linux en dual boot (choix du système effectué systématiquement au démarrage) n'est pas plus compliqué que ce qui est décrit ici. Il faut juste faire de la place sur le disque dur, en repartitionnant celui-ci.
+ Il est important que vous ayez conscience que faire tourner un système d'exploitation (linux, ici) depuis une clé USB est plus lent que de la faire tourner depuis le disque dur de votre ordinateur, notamment si celui-ci est un disque SSD. L'installation de linux en dual boot (choix du système effectué systématiquement au démarrage) n'est pas plus compliqué que ce qui est décrit ici. Il faut juste faire de la place sur le disque dur, en repartitionnant celui-ci:
+ - sous Windows **A FAIRE**
+ - sous MacOS, utiliser l'*Utilitaire de disque* (<tt>disk Utility.app</tt>, accessible par <tt>cmd</tt>+<tt>espace</tt>, puis entrer *disk* dans le champ de recherche spotlight)
  
  ## Matériel nécessaire
  Pour suivre ce tutoriel vous aurez besoin de:
- - une clé USB d'au moins 32 Go : le système linux sera installé sur cette clé (voir le principe exposé ci-dessus). Cette clé pourra vous être donnée gracieusement par l'IUT lors de l'install party
+ - une clé USB d'au moins 32 Go : le système linux sera installé sur cette clé (voir le principe exposé ci-dessus). Cette clé pourra vous être donnée gracieusement par l'IUT lors de l'install party, avec une capacité de 256 Go.
  - une autre clé USB d'au moins 4 Go : cette clé contiendra l'image des fichiers d'installation. Les animateurs de l'install party en auront tout un stock à disposition, sachant que cette clé n'est plus utile une fois l'installation terminée. Vous pouvez cependant venir avec votre propre clé si vous voulez réaliser l'installation de A à Z
  - l'ordinateur sur lequel vous lancerez le linux installé sur la clé USB. Les fichiers et la configuration du système d'exploitation sont en effet très dépendants du materiel sur lequel le système s'exécute. Vous ne pourrez donc a priori pas lancer le linux installé sur la clé, à partir d'un autre ordinateur que celui sur lequel l'installation aura été faite.
 
@@ -34,7 +36,7 @@ Par défaut, il est proposé d'installer la version LTS (long time support) d'[U
 La configuration matérielle recommandée pour une bonne expérience utilisateur est la suivante :
 - processeur de 2 GHz dual core
 - mémoire système (RAM) de 4 GiO
-- espace disque de 25 Go : il s'agit ici de la clé USB sur laquelle linux sera installé
+- espace disque de 25 Go : espace disponible sur la clé USB sur laquelle linux sera installé
 - écran compatible VGA avec une résolution minimale de 1024x768
 - 2 ports USB (pour l'installation)
 - accès internet
