@@ -7,9 +7,15 @@
  
  
 ## J'ai un écran noir avec <tt>grub ></tt>
-- l'installation du bootload a échoué.
+L'installation du boot loader a échoué. Il faut lancer ubuntu via grub rescue [cette page](https://doc.ubuntu-fr.org/grub-pc#demarrer_ubuntu_a_partir_de_grub_et_grub_rescue) vous y aidera.
 
-A TERMINER
+Une cause probable est que le boot loader a été installé sur la partition EFI du disque dur et non celle de la clé USB. Il faut donc régler ça. Pour ce faire, il faut virer ubuntu de la partition EFI du disque dur et réinstaller le grub sur la clé. On fait tout ça à partir d'un terminal sous ubuntu lancé depuis la clé.
+- Pour connaître les disques : <tt>sudo fdisk -l</tt>
+- Monter la partition EFI du disque dur (on suppose que c'est <tt>/dev/sda1</tt> <tt>mkdir -p /mnt/efi && mount /dev/sda1 /mnt/efi</tt>
+- Virer ubuntu : il est présent si un répertoire <tt>ubuntu</tt> existe. Si c'est le cas : <tt>sudo \rm -rf ubuntu</tt>
+- Réinstaller le boot loader. On suppose que la clé est connu sous <tt>/dev/sdb</tt> : <tt> sudo grub-install /dev/sdb</tt>
+- 
+## Autres manips possibles (mais sans doute obsolete)
 - Choisissez *Ubuntu* dans le menu
 - Connectez-vous avec le mot de passe indiqué lors de l'installation pour l'utilisateur
 - Ouvrez firefox et récupérez ce fichier [https://github.com/ekerrien/InstallPartyStDie/blob/main/postInstall.sh](postInstall.sh)
