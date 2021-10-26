@@ -32,9 +32,11 @@ On commence par donner la manipulation, version courte. Des explications détail
   - <tt>mount -B /sys /mnt/sys</tt>
   - <tt>mount -B /proc /mnt/proc</tt>
   - <tt>mount -B /run /mnt/run</tt>
+  - Note: on peut réaliser tout cela en une seule ligne de commande : <tt>for i in /dev /dev/pts /sys /proc /run; do mount -B $i /mnt$i; done</tt>
 - basculer sur cette nouvelle arborescence et résinstaller grub
   - <tt>chroot /mnt</tt>
   - <tt>grub-install /dev/sdc</tt> (Note: l'option <tt>--removable</tt> peut s'avérer utile parfois)
+  - <tt>exit</tt>
 - rebooter
 
 Note: on peut éviter une grande partie de cette manip en lançant l'ubuntu installé sur la clé, directement depuis grub rescue. [Cette page](https://doc.ubuntu-fr.org/grub-pc#demarrer_ubuntu_a_partir_de_grub_et_grub_rescue) vous y aidera, mais cela peut s'avérer plus ardu qu'avec la méthode présentée ci-dessus.
