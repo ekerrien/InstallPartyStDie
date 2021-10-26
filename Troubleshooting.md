@@ -5,6 +5,12 @@
   - Choisissez l'option de boot qui correspond à linux
   - Si linux se lance bien, le problème était sans doute lié au fait que le démarrage depuis le disque dur était prioritaire sur le démarrage depuis la clé USB. Lors du prochain démarrage, il faudra revenir dans le BIOS et changer l'ordre de priorité des *Boot options* afin que la clé USB vienne en premier
  
+## Ma clé d'installation n'apparait pas dans le boot Menu
+
+- Redémarrez votre ordinateur en appuyant sur la touche vous donnant accès au Bios. Pour connaître la touche en fonction de la marque de votre PC, vous pouvez vous référer à [cette page](https://www.disk-image.com/faq-bootmenu.htm) ou bien [celle-ci](https://techofide.com/blogs/boot-menu-option-keys-for-all-computers-and-laptops-updated-list-2021-techofide/). Dans de nombreux cas, la touche en question est indiquée brièvement dans un message à l'écran.
+- Une fois dans le Bios, assurez vous que l'option **Secure Boot** est désactivée. Si le **Secure Boot** est actif, **désactivez le** et redémarrez votre appareil.
+- Si la clé n'est toujours pas détectée, c'est que l'iso a été mal *flashé* sur celle-ci. Vous devez donc créer **correctement** la clé d'installation [ici](Preparatifs.md).
+- Pour les étourdis ayant oublié leur mot de passe de Bios (optionnel), entrez trois fois un mot de passe faux. Un choix s'offre alors à vous <tt>enter unlock password</tt> ou <tt>system shutdown</tt>, sélectionnez <tt>enter unlock password</tt>. Un message <tt>enter unlock password key</tt> : **votre clé** apparait, Copiez la clé sur [ce site web](https://bios-pw.org/) et appuyez sur <tt>get password</tt>. Choisissez le mot de passe correspondant au modèle de votre pc et rentrez le dans <tt>enter unlock password key</tt> : **votre clé**.
  
 ## J'ai un écran noir avec <tt>grub ></tt>
 L'installation du boot loader a échoué. 
@@ -44,11 +50,6 @@ Note: on peut éviter une grande partie de cette manip en lançant l'ubuntu inst
 ### Explications détaillées
 A FAIRE
 
-## Ma clé d'installation n'apparait pas dans le boot Menu
 
-- Redémarrez votre ordinateur en appuyant sur la touche vous donnant accès au Bios. Pour connaître la touche en fonction de la marque de votre PC, vous pouvez vous référer à [cette page](https://www.disk-image.com/faq-bootmenu.htm) ou bien [celle-ci](https://techofide.com/blogs/boot-menu-option-keys-for-all-computers-and-laptops-updated-list-2021-techofide/). Dans de nombreux cas, la touche en question est indiquée brièvement dans un message à l'écran.
-- Une fois dans le Bios, assurez vous que l'option **Secure Boot** est désactivée. Si le **Secure Boot** est actif, **désactivez le** et redémarrez votre appareil.
-- Si la clé n'est toujours pas détectée, c'est que l'iso a été mal *flashé* sur celle-ci. Vous devez donc créer **correctement** la clé d'installation [ici](Preparatifs.md).
-- Pour les étourdis ayant oublié leur mot de passe de Bios (optionnel), entrez trois fois un mot de passe faux. Un choix s'offre alors à vous <tt>enter unlock password</tt> ou <tt>system shutdown</tt>, sélectionnez <tt>enter unlock password</tt>. Un message <tt>enter unlock password key</tt> : **votre clé** apparait, Copiez la clé sur [ce site web](https://bios-pw.org/) et appuyez sur <tt>get password</tt>. Choisissez le mot de passe correspondant au modèle de votre pc et rentrez le dans <tt>enter unlock password key</tt> : **votre clé**.
 
 [Retour à la post-installation](PostIntallation.md)
