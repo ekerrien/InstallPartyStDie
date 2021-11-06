@@ -31,6 +31,7 @@
    - Cliquez sur *Réduire*. Cela peut prendre un peu de temps.
    - À la fin du processus, vous verrez une nouvelle partition de la taille souhaitée, et étiquetée *Non alloué* qui apparaît à la fin de votre disque. Vous pouvez alors lancer la procédure d'installation.
  - sous MacOS, utiliser l'*Utilitaire de disque* (<tt>disk Utility.app</tt>, accessible par <tt>cmd</tt>+<tt>espace</tt>, puis entrer *disk* dans le champ de recherche spotlight)
+
 Une fois le repartitionnement effectué, vous pourrez faire une installation plus simple : choisissez "Installez Ubuntu à côté de Windows (ou macos)" lorsque vous sera demandé le type d'installation souhaité.
  
  ## Matériel nécessaire
