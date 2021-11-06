@@ -20,8 +20,18 @@
  Pour revenir à votre système d'exploitation initial, il suffit de redémarrer l'ordinateur.
  
  Il est important que vous ayez conscience que faire tourner un système d'exploitation (linux, ici) depuis une clé USB est plus lent que de la faire tourner depuis le disque dur de votre ordinateur, notamment si celui-ci est un disque SSD. L'installation de linux en dual boot (choix du système effectué systématiquement au démarrage) n'est pas plus compliqué que ce qui est décrit ici. Il faut juste faire de la place sur le disque dur, en repartitionnant celui-ci:
- - sous Windows **A FAIRE**
+ - sous Windows
+   - ***Attention*** *Vous ne pourrez pas redimensionner votre disque s'il est encrypté (par exemple avec bitlocker). Dans ce cas, il faut soit désactiver l'encryption au préalable, soit installer sur une autre support (par exemple la clé USB, ou une autre partition non encryptée).
+   - Faire un clic droit sur l'icône windows en bas à gauche (menu démarrer): choisir *Gestion du disque* dans le menu
+   - Dans la fenêtre qui s'ouvre, choisir la partition que vous souhaitez redimensionner. Cette partition doit être associée à une lettre (*Volume*, par exemple C:), être en NTFS (*Système de fichiers*) et de taille suffisante.
+   - Si vous avez l'indication que la partition est chiffrée (avec BitLocker), vous ne pouvez pas continuer.
+   - Sinon, faire un clic droit dessus et choisir *Réduire le volume...*. Une fenêtre de message s'ouvre et cela peut prendre du temps.
+   - Quand l'analyse est terminée, une fenêtre s'ouvre, indiquant notamment la *Quantité d'espace à réduire*. Cela va correspondre à l'espace que vous aller libérer sur le disque, et dans lequel vous pourrez installer linux. Indiquez la taille souhaitée, qui ne peut dépasser celle initialement indiquée (par exemple 256000 pour 256Go d'espace disque). 
+   - Si l'espace est insuffisant, cliquez sur *Annuler* puis refaites un clic droit sur la partition et choisissez *Propriétés*, puis onglet *Outils*, puis cliquez sur *Optimiser* : cela lance la défragmentation du disque. Une fois cela fait, retentez de *Réduire le volume...*
+   - Cliquez sur *Réduire*. Cela peut prendre un peu de temps.
+   - À la fin du processus, vous verrez une nouvelle partition de la taille souhaitée, et étiquetée *Non alloué* qui apparaît à la fin de votre disque. Vous pouvez alors lancer la procédure d'installation.
  - sous MacOS, utiliser l'*Utilitaire de disque* (<tt>disk Utility.app</tt>, accessible par <tt>cmd</tt>+<tt>espace</tt>, puis entrer *disk* dans le champ de recherche spotlight)
+Une fois le repartitionnement effectué, vous pourrez faire une installation plus simple : choisissez "Installez Ubuntu à côté de Windows (ou macos)" lorsque vous sera demandé le type d'installation souhaité.
  
  ## Matériel nécessaire
  Pour suivre ce tutoriel vous aurez besoin de:
