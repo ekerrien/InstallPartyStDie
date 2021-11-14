@@ -112,5 +112,7 @@ Les manipulations avec les systèmes d'exploitation sont parfois risquées… Su
 
 Vous avez plusieurs possibiltés pour stocker les données que vous souhaitez conserver : la clé USB qui vous aura été fournie, un cloud, etc.
 
+***BitLocker:*** Si le disque sur lequel Windows est installé est encrypté avec bitlocker (vous pouvez voir sous Windows, en allant dans le *Gestionnaire de disques* via un click droit sur le menu démarrer : la mention bitlocker sera présente pour cette paritition). Dans ce cas, prenez soin d'[ajouter votre machine à votre compte microsoft](https://support.microsoft.com/fr-fr/windows/gérer-tous-les-appareils-utilisés-avec-votre-compte-microsoft-d4044995-81db-b24b-757e-1102d148f441). Cela vous permettra de [récupérer votre clé bitlocker](https://account.microsoft.com/devices/recoverykey?refd=support.microsoft.com) en cas de besoin ultérieurement
+
 | [Précédent](README.md) | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [Suivant](Installation.md) |
  | :---   | :---: |    ---: |
