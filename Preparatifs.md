@@ -41,7 +41,7 @@ Une fois le repartitionnement effectué, vous pourrez faire une installation plu
  - l'ordinateur sur lequel vous lancerez le linux installé sur la clé USB. Les fichiers et la configuration du système d'exploitation sont en effet très dépendants du materiel sur lequel le système s'exécute. Vous ne pourrez donc a priori pas lancer le linux installé sur la clé, à partir d'un autre ordinateur que celui sur lequel l'installation aura été faite.
 
 ## Choix du linux
-Par défaut, il est proposé d'installer la version LTS (long time support) d'[Ubuntu](https://ubuntu.com). Aujourd'hui, il s'agit de la version 20.04.3 qui est [supportée jusqu'en 2025 (2030 pour les mises à jour de sécurité)](https://ubuntu.com/about/release-cycle).
+Par défaut, il est proposé d'installer la version LTS (long time support) d'[Ubuntu](https://ubuntu.com). Aujourd'hui, il s'agit de la version 22.04.1 LTS qui est [supportée jusqu'en 2027 (2032 pour les mises à jour de sécurité)](https://ubuntu.com/about/release-cycle).
 
 
 La configuration matérielle recommandée pour une bonne expérience utilisateur est la suivante :
@@ -67,11 +67,11 @@ Nous ne décrivons ici que l'installation de la version 64 bits qui convient à 
 ## Téléchargement et création de la clé d'installation
 Si vous n'avez pas de clé d'installation, il faut d'abord télécharger une image (fichier .iso) de la clé d'installation : cette image contient tout ce qu'il faut pour installer un nouveau système.
 
-Si vous avez choisi Ubuntu, allez sur le [site de téléchargement](https://ubuntu.com/#download) et choisissez la version Desktop 20.04 ([lien direct](https://ubuntu.com/download/desktop/thank-you?version=20.04.3&architecture=amd64))
+Si vous avez choisi Ubuntu, allez sur le [site de téléchargement](https://ubuntu.com/#download) et choisissez la version Desktop 22.04.1 LTS ([lien direct](https://ubuntu.com/download/desktop/thank-you?version=22.04.1&architecture=amd64))
 
-Si vous avez choisi Xubuntu, il faut [récupérer un fichier torrent](https://xubuntu.org/download) (choisir la version LTS 20.04 64bits, voici un [lien direct](https://torrent.ubuntu.com/xubuntu/releases/focal/release/desktop/xubuntu-20.04.3-desktop-amd64.iso.torrent)). Il vous faut donc un logiciel torrent (par exemple [utorrent](https://www.utorrent.com)).
+Si vous avez choisi Xubuntu, il faut [récupérer un fichier torrent](https://xubuntu.org/download) (choisir la version LTS 22.04 64bits, voici un [lien direct](https://torrent.ubuntu.com/xubuntu/releases/jammy/release/desktop/xubuntu-22.04.1-desktop-amd64.iso.torrent)). Il vous faut donc un logiciel torrent (par exemple [utorrent](https://www.utorrent.com)).
 
-Dans les deux cas, vous aurez récupéré, a priori dans votre dossier de téléchargements, un fichier avec pour extension <tt>.iso</tt> (<tt>ubuntu-20.04.3-desktop-amd64.iso</tt> pour Ubuntu, et <tt>xubuntu-20.04.3-desktop-amd64.iso</tt> pour Xubuntu). 
+Dans les deux cas, vous aurez récupéré, a priori dans votre dossier de téléchargements, un fichier avec pour extension <tt>.iso</tt> (<tt>ubuntu-22.04.1-desktop-amd64.iso</tt> pour Ubuntu, et <tt>xubuntu-22.04.1-desktop-amd64.iso</tt> pour Xubuntu). 
 
 L'étape suivante consiste à transférer cette image sur la clé USB d'installation. Cela va dépendre du système dont vous disposez.
 
@@ -84,7 +84,7 @@ Vous pouvez suivre [ces indications](https://ubuntu.com/tutorials/create-a-usb-s
 - Lancer Rufus et insérer la clé USB (au moins 4Go)
 - Sélectionner la clé USB dans le champ <tt>Device</tt>
 - Sélectionner <tt>FreeDOS</tt> dans <tt>Boot selection</tt>
-- Cliquer sur le bouton <tt>SELECT</tt> et sélectionner le fichier image <tt>ubuntu-20.04.3-desktop-amd64.iso</tt> ou <tt>xubuntu-20.04.3-desktop-amd64.iso</tt> selon le linux choisi
+- Cliquer sur le bouton <tt>SELECT</tt> et sélectionner le fichier image <tt>ubuntu-22.04.1-desktop-amd64.iso</tt> ou <tt>xubuntu-22.04.1-desktop-amd64.iso</tt> selon le linux choisi
 - Cliquer sur <tt>START</tt>
 - Si une fenêtre apparaît pour avertir que des téléchargements supplémentaires sont requis (*Download required*), cliquer sur <tt>Yes</tt>
 - Rufus émettra ensuite une fenêtre avertissant qu'il a détecté l'écriture d'un fichier ISO : conserver *Write in ISO Image mode* et cliquer sur <tt>OK</tt>
@@ -96,7 +96,7 @@ Vous pouvez suivre [ces indications](https://ubuntu.com/tutorials/create-a-usb-s
 Vous pouvez suivre [ces indications](https://ubuntu.com/tutorials/create-a-usb-stick-on-macos#1-overview)
 - Installer le logiciel [Etcher](https://etcher.io/)
 - Insérer la clé USB et lancer Etcher
-- *Select image* : Sélectionner l'image. C'est le fichier ISO (<tt>ubuntu-20.04.3-desktop-amd64.iso</tt> pour Ubuntu, et <tt>xubuntu-20.04.3-desktop-amd64.iso</tt> pour Xubuntu)
+- *Select image* : Sélectionner l'image. C'est le fichier ISO (<tt>ubuntu-22.04.1-desktop-amd64.iso</tt> pour Ubuntu, et <tt>xubuntu-22.04.1-desktop-amd64.iso</tt> pour Xubuntu)
 - *Select drive* : Sélectionner le disque. C'est la clé USB.
 - *Flash!* : ne sera activé que lorsque l'image et la clé auront été sélectionnées. Cliquer sur <tt>Flash!</tt> pour lancer l'écriture. 
 - Votre mot de passe administrateur est demandé puis l'écriture se déroule.
