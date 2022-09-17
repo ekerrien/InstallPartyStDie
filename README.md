@@ -10,3 +10,4 @@ Les limites de ce tutoriel sont les suivantes :
 
 Auteurs de ce tutoriel:
 - Erwan Kerrien
+- Florian Cuny
