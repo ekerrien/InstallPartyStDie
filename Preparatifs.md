@@ -27,7 +27,7 @@
    - Si vous avez l'indication que la partition est chiffrée (avec BitLocker), vous ne pouvez pas continuer.
    - Sinon, faire un clic droit dessus et choisir *Réduire le volume...*. Une fenêtre de message s'ouvre et cela peut prendre du temps.
    - Quand l'analyse est terminée, une fenêtre s'ouvre, indiquant notamment la *Quantité d'espace à réduire*. Cela va correspondre à l'espace que vous aller libérer sur le disque, et dans lequel vous pourrez installer linux. Indiquez la taille souhaitée, qui ne peut dépasser celle initialement indiquée (par exemple 256000 pour 256Go d'espace disque). 
-   - Si l'espace est insuffisant, cliquez sur *Annuler* puis refaites un clic droit sur la partition et choisissez *Propriétés*, puis onglet *Outils*, puis cliquez sur *Optimiser* : cela lance la défragmentation du disque. Une fois cela fait, retentez de *Réduire le volume...*
+   - Si l'espace est insuffisant et que votre disque est un hdd, cliquez sur *Annuler* puis refaites un clic droit sur la partition et choisissez *Propriétés*, puis onglet *Outils*, puis cliquez sur *Optimiser* : cela lance la défragmentation du disque. Une fois cela fait, retentez de *Réduire le volume...*
    - Cliquez sur *Réduire*. Cela peut prendre un peu de temps.
    - À la fin du processus, vous verrez une nouvelle partition de la taille souhaitée, et étiquetée *Non alloué* qui apparaît à la fin de votre disque. Vous pouvez alors lancer la procédure d'installation.
  - sous MacOS, utiliser l'*Utilitaire de disque* (<tt>disk Utility.app</tt>, accessible par <tt>cmd</tt>+<tt>espace</tt>, puis entrer *disk* dans le champ de recherche spotlight)
