@@ -30,8 +30,8 @@ Installer linux est simple et rapide, une fois que vous vous êtes [bien prépar
     - Sélectionner eduroam, puis, dans l'écran de connexion, choisissez :
       - **Authentification: *Tunneled TLS***
       - **Inner authentication: *MSCHAPv2 (no EAP)***
-      - **Username: *<votre identifiant IUT>@etu.univ-lorraine.fr***
-      - **Password: *<votre mot de passe IUT>***
+      - **Username: *<\votre identifiant IUT>@etu.univ-lorraine.fr***
+      - **Password: *<\votre mot de passe IUT>***
 - **Mises à jour et autres logiciels**: ne changez rien, sauf si vous avez une carte graphique NVidia
   - En cas de carte graphique Nvidia, sélectionnez *Installer les logiciels tiers...*
   - Entrez un mot de passe: vous aurez besoin d'un mot de passe plus tard (voir **Qui êtes-vous ?** ci-dessous), vous pouvez prendre le même.
