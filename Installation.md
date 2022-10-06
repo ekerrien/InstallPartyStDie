@@ -24,7 +24,14 @@ Installer linux est simple et rapide, une fois que vous vous êtes [bien prépar
 - (X)Ubuntu se lance... soyez un peu patient
 - **Langue**: Une fenêtre apparaît : sélectionnez le français comme langue (ou celle qui vous convient le mieux), puis cliquez sur <tt>Installer Ubuntu</tt> (<tt>Continue</tt> dans le cas de Xubuntu)
 - **Clavier**: Vous devez valider ensuite la disposition du clavier. En général, il est bien détecté : cliquez sur <tt>Continuer</tt> (en cas de doute vous pouvez faire quelque tests dans le champ vide juste au-dessus du bouton <tt>Détecter la disposition du clavier</tt>)
-- **Réseau**: Choisissez de vous connecter au réseau de l'IUT. Entrez les informations de connexion et cliquez sur <tt>Continuer</tt>.
+- **Réseau**: 
+  Vous pouvez :
+    - Choisir de vous connecter au réseau de l'IUT. Entrez les informations de connexion et cliquez sur <tt>Continuer</tt>.
+    - Sélectionner eduroam, puis, dans l'écran de connexion, choisissez :
+      - **Authentification: *Tunneled TLS***
+      - **Inner authentication: *MSCHAPv2 (no EAP)***
+      - **Username: *<votre identifiant IUT>@etu.univ-lorraine.fr***
+      - **Password: *<votre mot de passe IUT>***
 - **Mises à jour et autres logiciels**: ne changez rien, sauf si vous avez une carte graphique NVidia
   - En cas de carte graphique Nvidia, sélectionnez *Installer les logiciels tiers...*
   - Entrez un mot de passe: vous aurez besoin d'un mot de passe plus tard (voir **Qui êtes-vous ?** ci-dessous), vous pouvez prendre le même.
