@@ -31,7 +31,7 @@ L'étiquette sera remise en fin d'installation sur la partition du disque dur af
   - lancez la commande <code>sudo apt update</code>
   - lancez la commande <code>sudo apt install gparted</code>
   - lancez la commande <code>sudo gparted</code>
-- identifiez la partition (taille aux alentours de 100-500 Mo) étiquetée ESP
+- identifiez la partition (taille aux alentours de 100-500 Mo) étiquetée ESP (EFI System Partition)
 - faites un click droit dessus
 - sélectionnez "Manage Flags"
 - normalement les étiquettes 'boot' et 'esp' sont sélecionnées. Désélectionnez-les. Il est possible que cela active l'étiquette 'mftdata', ce qui est normal.
