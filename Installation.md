@@ -36,7 +36,7 @@ L'étiquette sera remise en fin d'installation sur la partition du disque dur af
 - sélectionnez "Manage Flags"
 - normalement les étiquettes 'boot' et 'esp' sont sélecionnées. Désélectionnez-les. Il est possible que cela active l'étiquette 'mftdata', ce qui est normal.
 - quittez gparted
-- 
+
  ## Installation proprement dite
 - insérez la clé USB sur laquelle vous souhaitez installer linux
 - sur le bureau, cliquez sur l'icône 'Install (x)Ubuntu'
