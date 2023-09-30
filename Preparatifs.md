@@ -102,7 +102,8 @@ Vous pouvez suivre [ces indications](https://ubuntu.com/tutorials/create-a-usb-s
 - Votre mot de passe administrateur est demandé puis l'écriture se déroule.
 - Lorsque la mention *Flash Complete!* apparaît, le processus est terminé. Vous pouvez quitter le logiciel et récupérer votre clé USB.
 
-Vous êtes maintenant prêts pour [l'installation](Installation.md).
+Avant de procéder à l'installation proprement dite, il faut appliquer un changement au disque de votre ordinateur. Ce changement ne modifie pas le contenu du disque et est temporaire. Nous remettrons les choses en état en fin d'installation.
+Continuez pour effectuer [cette manip](removeesp.md).
 
 ## Quelques précautions d'usage…
 
