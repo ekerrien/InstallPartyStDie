@@ -31,7 +31,7 @@ L'étiquette sera remise en fin d'installation sur la partition du disque dur af
   - lancez la commande <code>sudo apt update</code>
   - lancez la commande <code>sudo apt install gparted</code>
   - lancez la commande <code>sudo gparted</code>
-- identifiez la partition (taille aux alentours de 100-500 Mo) étiquetée ESP (EFI System Partition)
+- identifiez la partition (taille aux alentours de 100-500 Mo) étiquetée ESP (EFI System Partition): **notez-la sur un bout de papier**
 - faites un click droit dessus
 - sélectionnez "Manage Flags"
 - normalement les étiquettes 'boot' et 'esp' sont sélecionnées. Désélectionnez-les. Il est possible que cela active l'étiquette 'mftdata', ce qui est normal.
@@ -86,8 +86,13 @@ L'étiquette sera remise en fin d'installation sur la partition du disque dur af
   - Confirmez votre de mot passe : ben oui, faites-le, juste pour être sûr qu'il n'y a pas d'erreur de frappe...
   - Pour des raisons de sécurité, il est fortement recommandé de sélectionner *Demander mon mot de passe pour ouvrir une session*
 - L'installation se lance. Soyez patients...
-- Une fois l'installation terminée, il vous est demandé de redémarrer. Cliquez sur <tt>Redémarrez maintenant</tt>
-- À un moment, il vous sera demandé de retirer la clé d'installation. Après l'avoir fait, vous pourrez continuer le redémarrage en appuyant sur la touche <tt>Entrée</tt>
+- Une fois l'installation terminée, il vous est proposé de redémarrer ou de continuer à tester. Cliquez sur <tt>Continuez à tester</tt>
+
+## Remise en état du disque dur principal
+- relancez gparted
+- retrouvez la partition qui portait initialement l'étiquette ESP
+- click droit dessus, 'Manage flags': resélectionnez 'esp' (ça devrait automatiquement désélectionner 'mftdata' et sélectionenr 'boot'. Si ce n'est pas le cas, assurez-vous en)
+- quittez gparted et éteignez la machine
 - Vous n'avez plus besoin de la clé d'installation et vous pouvez la rendre pour que le ou la suivante puisse s'ouvrir aux bienfaits de linux !
 
 
