@@ -62,7 +62,8 @@ Il est possible que votre ordinateur soit plus ancien et/ou avec un matériel de
 Nous ne décrivons ici que l'installation de la version 64 bits qui convient à la plupart des processeurs suffisamment récents. Des version 32 bits existent aussi, notamment pour Xubuntu.
 
 
-**Les étapes suivantes ne sont pas nécessaires si vous participez à l'install party : les clés d'installation sont mises à disposition par les animateurs. Dans ce cas, vous pouvez directement passer à [l'installation](Installation.md).**
+**Les étapes suivantes ne sont pas nécessaires si vous participez à l'install party : les clés d'installation sont mises à disposition par les animateurs. Dans ce cas, vous pouvez directement passer à [la manip préparatoire](Removeesp.md).**
+
 
 ## Téléchargement et création de la clé d'installation
 Si vous n'avez pas de clé d'installation, il faut d'abord télécharger une image (fichier .iso) de la clé d'installation : cette image contient tout ce qu'il faut pour installer un nouveau système.
@@ -103,7 +104,7 @@ Vous pouvez suivre [ces indications](https://ubuntu.com/tutorials/create-a-usb-s
 - Lorsque la mention *Flash Complete!* apparaît, le processus est terminé. Vous pouvez quitter le logiciel et récupérer votre clé USB.
 
 Avant de procéder à l'installation proprement dite, il faut appliquer un changement au disque de votre ordinateur. Ce changement ne modifie pas le contenu du disque et est temporaire. Nous remettrons les choses en état en fin d'installation.
-Continuez pour effectuer [cette manip](removeesp.md).
+Continuez pour effectuer [cette manip](Removeesp.md).
 
 ## Quelques précautions d'usage…
 
