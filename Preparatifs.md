@@ -1,6 +1,6 @@
  # Etapes préparatoires
  
- | [Précédent](README.md) | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [Suivant](Removeesp.md) |
+ | [Précédent](README.md) | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [Suivant](Installation.md) |
  | :---   | :---: |    ---: |
  
  
@@ -62,7 +62,7 @@ Il est possible que votre ordinateur soit plus ancien et/ou avec un matériel de
 Nous ne décrivons ici que l'installation de la version 64 bits qui convient à la plupart des processeurs suffisamment récents. Des version 32 bits existent aussi, notamment pour Xubuntu.
 
 
-**Les étapes suivantes ne sont pas nécessaires si vous participez à l'install party : les clés d'installation sont mises à disposition par les animateurs. Dans ce cas, vous pouvez directement passer à [la manip préparatoire](Removeesp.md).**
+**Les étapes suivantes ne sont pas nécessaires si vous participez à l'install party : les clés d'installation sont mises à disposition par les animateurs. Dans ce cas, vous pouvez directement passer à [l'installation](Installation.md).**
 
 
 ## Téléchargement et création de la clé d'installation
@@ -103,9 +103,7 @@ Vous pouvez suivre [ces indications](https://ubuntu.com/tutorials/create-a-usb-s
 - Votre mot de passe administrateur est demandé puis l'écriture se déroule.
 - Lorsque la mention *Flash Complete!* apparaît, le processus est terminé. Vous pouvez quitter le logiciel et récupérer votre clé USB.
 
-Avant de procéder à l'installation proprement dite, il faut appliquer un changement au disque de votre ordinateur. Ce changement ne modifie pas le contenu du disque et est temporaire. Nous remettrons les choses en état en fin d'installation.
-Continuez pour effectuer [cette manip](Removeesp.md).
-
+Vous êtes à présent prêts à procéder à [l'installation][Installation.md)
 ## Quelques précautions d'usage…
 
 Les manipulations avec les systèmes d'exploitation sont parfois risquées… Surtout si vous avez pris la courageuse décision de remplacer l'OS de votre ordinateur, au lieu d'utiliser la clé USB.
@@ -116,5 +114,5 @@ Vous avez plusieurs possibiltés pour stocker les données que vous souhaitez co
 
 ***BitLocker:*** Si le disque sur lequel Windows est installé est encrypté avec bitlocker (vous pouvez voir sous Windows, en allant dans le *Gestionnaire de disques* via un click droit sur le menu démarrer : la mention bitlocker sera présente pour cette paritition). Dans ce cas, prenez soin d'[ajouter votre machine à votre compte microsoft](https://support.microsoft.com/fr-fr/windows/gérer-tous-les-appareils-utilisés-avec-votre-compte-microsoft-d4044995-81db-b24b-757e-1102d148f441). Cela vous permettra de [récupérer votre clé bitlocker](https://account.microsoft.com/devices/recoverykey?refd=support.microsoft.com) en cas de besoin ultérieurement
 
-| [Précédent](README.md) | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [Suivant](Removeesp.md) |
+| [Précédent](README.md) | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [Suivant](Installation.md) |
  | :---   | :---: |    ---: |
