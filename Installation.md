@@ -5,7 +5,7 @@
 
 Installer linux est simple et rapide, une fois que vous vous êtes [bien préparés](Preparatifs.md). Il suffit de suivre ces étapes:
 - Eteignez votre ordinateur
-- Insérez la clé USB d'installation, ainsi que la clé USB sur laquelle vous souhaitez installer linux
+- Insérez la clé USB d'installation
 - Allumez votre ordinateur en *One Time Boot* en passant par le *Boot menu*. La manipulation pour activer ce menu au démarrage dépend de votre machine.
   - Si vous êtes sur PC
     - dès le lancement (en général dès que le logo apparaît), appuyez sur la bonne touche. Pour connaître la touche en fonction de la marque de votre PC, vous pouvez vous référer à [cette page](https://www.disk-image.com/faq-bootmenu.htm) ou bien [celle-ci](https://techofide.com/blogs/boot-menu-option-keys-for-all-computers-and-laptops-updated-list-2021-techofide/). Dans de nombreux cas, la touche en question est indiquée brièvement dans un message à l'écran.
@@ -17,11 +17,30 @@ Installer linux est simple et rapide, une fois que vous vous êtes [bien prépar
     - Une liste de disques apparaît : cliquez sur EFI Boot
     - Il peut y avoir deux EFI Boot : sélectionnez le premier (les deux fonctionnent pareil...)
     
-    
-- Un menu apparaît : 
-  - Si vous avez choisi **Ubuntu** : attendez
-  - Si vous avez choisi **Xubuntu** : sélectionnez (avec les flèches) *Install Xubuntu* (Vous pouvez aussi choisir dans un premier temps *Try Xubuntu without installing* pour simplement tester Xubuntu, sans impact sur votre système, et vous assurer que tout fonctionne correctement).
-- (X)Ubuntu se lance... soyez un peu patient
+## Protection du disque dur principal
+ Le bootloader des systèmes EFI a besoin d'une partition étiquetée ESP sur le disque de lancement, mais il ne peut en gérer qu'une seule sur tout le système.
+Ceci crée un problème si on veut installer un système indépendant sur un nouveau support, comme dans notre cas. Le truc, décrit sur [cette page](https://itsfoss.com/intsall-ubuntu-on-usb/)
+consiste à simplement retirer l'étiquette ESP du disque dur, ce qui permettra à l'installateur d'en créer une nouvelle sur la clé USB lors de l'installation.
+L'étiquette sera remise en fin d'installation sur la partition du disque dur afin de restaurer votre machine dans son état d'origine.
+
+- choisissez "Try (x)ubuntu" (Essayer (x)ubuntu)
+- une fois le système lancé, appuyez sur la touche Windows, et cherchez l'appli gparted. Lancez-là.
+- Si l'appli gparted n'est pas disponible, installez-la en
+  - connectez-vous à internet
+  - ouvrez un terminal
+  - lancez la commande <code>sudo apt update</code>
+  - lancez la commande <code>sudo apt install gparted</code>
+  - lancez la commande <code>sudo gparted</code>
+- identifiez la partition (taille aux alentours de 100-500 Mo) étiquetée ESP
+- faites un click droit dessus
+- sélectionnez "Manage Flags"
+- normalement les étiquettes 'boot' et 'esp' sont sélecionnées. Désélectionnez-les. Il est possible que cela active l'étiquette 'mftdata', ce qui est normal.
+- quittez gparted
+- 
+ ## Installation proprement dite
+- insérez la clé USB sur laquelle vous souhaitez installer linux
+- sur le bureau, cliquez sur l'icône 'Install (x)Ubuntu'
+- Un menu apparaît
 - **Langue**: Une fenêtre apparaît : sélectionnez le français comme langue (ou celle qui vous convient le mieux), puis cliquez sur <tt>Installer Ubuntu</tt> (<tt>Continue</tt> dans le cas de Xubuntu)
 - **Clavier**: Vous devez valider ensuite la disposition du clavier. En général, il est bien détecté : cliquez sur <tt>Continuer</tt> (en cas de doute vous pouvez faire quelque tests dans le champ vide juste au-dessus du bouton <tt>Détecter la disposition du clavier</tt>)
 - **Réseau**: 
