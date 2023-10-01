@@ -62,7 +62,7 @@ L'étiquette sera remise en fin d'installation sur la partition du disque dur af
   - Sélectionnez le périphérique correspondant à la clé (ici <tt>/dev/sdb</tt>) et cliquez sur <tt>Nouvelle table de partition</tt>
   - Puis, dans l'espace libre, créez trois partitions:
     - Sous <tt>/dev/sdb</tt>, sélectionnez *espace libre* et cliquez sur le signe <tt>+</tt> en-dessous. Cela ouvre une fenêtre.
-    - **Taille**: 128Mo
+    - **Taille**: 500Mo
     - **Utiliser comme**: *Partition système EFI*
     - Cliquez sur <tt>OK</tt>
     - Sous <tt>/dev/sdb</tt>, sélectionnez *espace libre* et cliquez sur le signe <tt>+</tt> en-dessous. Cela ouvre une fenêtre.
