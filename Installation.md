@@ -76,7 +76,7 @@ L'étiquette sera remise en fin d'installation sur la partition du disque dur af
     - Cliquez sur <tt>OK</tt>
   - Revenez à la liste des périphériques et sélectionnez la dernière partition que vous venez de créer (par exemple <tt>/dev/sdb3</tt> qui est de type <tt>ext4</tt>)
   - Dans la liste *Périphérique où sera installé le programme de démarrage* sélectionnez la partition de type efi (<tt>/dev/sdb1</tt> par exemple)
-  - Cliquez sur <tt>Installer maintenant</tt>
+  - Cliquez sur <tt>Installer maintenant</tt> (ou <tt>Continuer</tt>)
   - Un message d'avertissement apparaît : cliquez sur <tt>Continuer</tt>
 - **Où êtes-vous ?**: vérifiez que la zone est bien Paris, et cliquez sur <tt>Continuer</tt>
 - **Qui êtes-vous ?**: 
