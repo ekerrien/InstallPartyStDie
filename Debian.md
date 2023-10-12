@@ -58,7 +58,17 @@ Une fois le repartitionnement effectué, vous pourrez faire une installation plu
 - Configurer l'outil de gestion des paquets : Choisir 'Oui', puis 'France', puis 'deb.debian.org', laissez vide le mandataire
 - Configuration de popularity-contest : choisir ce que vous voulez ('Non' a priori pour éviter des transferts d'info via le réseau)
 - Sélection des logiciels : garder ce qui est sélectionné par défaut (sauf si vous savez ce que vous faites)
-- 
+- Patientez... (une boisson ? un gateau ?)
+- L'installation est terminée, valider le reboote du système
+- enlever la clé d'install quand la machine s'éteint, mais bien laisser la clé cible branchée
+- Le système reboote sur debian
+- Une fois debian lancé, répondre au questionnaire post-install
+- puis ouvrir un terminal
+- passer root par la commande 'su -' (mot de passe admin)
+- entrer la commande 'grub-install --no-nvram --removable'
+- éteindre la machine
+
+L'installation est terminée. Vérifiez que votre machine boote normalement sans la clé, et boote sous debian avec la clé (via l'OTB)
 
 | [Précédent](README.md) | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [Suivant](Installation.md) |
  | :---   | :---: |    ---: |
