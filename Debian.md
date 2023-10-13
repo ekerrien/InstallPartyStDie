@@ -1,9 +1,5 @@
  # Installation Debian sur clé USB
  
- | [Précédent](README.md) | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [Suivant](Installation.md) |
- | :---   | :---: |    ---: |
- 
- 
  ## Principe général
  À l'issue de ce tutoriel, vous aurez une clé USB sur laquelle un système linux Debian 12.2.0 sera installé. Afin de booter sur linux, il vous suffira de
  - éteindre votre ordinateur, 
@@ -61,14 +57,20 @@ Une fois le repartitionnement effectué, vous pourrez faire une installation plu
 - Patientez... (une boisson ? un gateau ?)
 - L'installation est terminée, valider le reboote du système
 - enlever la clé d'install quand la machine s'éteint, mais bien laisser la clé cible branchée
-- Le système reboote sur debian
+
+## Comportement observé habituellement pendant l'install party
+- le système reboote sur windows. Vérifier que ça marche bien, puis éteindre.
+- redémarrer la machine en OTB, et choisir de booter debian. Vérifier que ça marche : lors du premier lancement, une suite de panneaux vous est présentée pour finaliser la configuration. Répondez ce que vous voulez (gardez le défaut) : tout peut se modifer par la suite.
+- éteindre la machine. Enlever la clé cible. Redémarrer : vérifier que Windows se lance normalement.
+- C'est tout bon !
+
+## Comportement qui peut arriver
+- Après l'install, le système reboote directement sur debian
 - Une fois debian lancé, répondre au questionnaire post-install
-- puis ouvrir un terminal
-- passer root par la commande 'su -' (mot de passe admin)
+- puis ouvrir un terminal (touche windows + taper 'term' dans le champ de recherche)
+- passer root par la commande 'su -' (+ mot de passe admin)
 - entrer la commande 'grub-install --no-nvram --removable'
 - éteindre la machine
+- faire les vérifications du comportement habituel (enlever la clé cible et vérifier que windows se lance. Eteindre, metre la clé cible, booter en OTB sur debian et vérifier que ça marche).
 
-L'installation est terminée. Vérifiez que votre machine boote normalement sans la clé, et boote sous debian avec la clé (via l'OTB)
-
-| [Précédent](README.md) | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [Suivant](Installation.md) |
- | :---   | :---: |    ---: |
+L'installation est terminée. 
